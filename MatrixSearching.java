@@ -1,27 +1,23 @@
-import java.util.Arrays;
-
 public class MatrixSearching 
 {
 public static void main(String[] args) 
 {
-  int[][] matrix = {{18,19,69},
-                    {89,99,101},
-                    {100,200,300}};  
- System.out.println(Arrays.toString( searchingElement(matrix, 18)));  
+  int[][] matrix = {{1,3}};  
+  System.out.println(searchingElement(matrix,3)); 
 }
-public static int[] searchingElement(int[][] array, int target) 
+
+public static boolean searchingElement(int[][] matrix, int target) 
 {
   int start = 0; // row
-  int end = array.length-1; // column
+  int end = matrix.length-1; // column
 
-  while (start<array.length && end>=0) 
+  while (start<matrix.length && end>=0) 
   {
-    // int mid = start + (end-start)/2 ;  
-    if (array[start][end] == target)
+    if (matrix[start][end] == target)
     {
-        return new int[]{start,end};
+      return true;
     }
-    if (array[start][end] < target) 
+    if (matrix[start][end] < target) 
     {
       start++ ;
     }
@@ -30,8 +26,7 @@ public static int[] searchingElement(int[][] array, int target)
       end-- ;     
     }   
   }
-  return new int[] {-1,-1} ;
-
+  return false;
 }
-    
+
 }
