@@ -9,7 +9,7 @@ public static void main(String[] args)
 public static boolean searchingElement(int[][] matrix, int target) 
 {
   int start = 0; // row
-  int end = matrix.length-1; // column
+  int end = matrix[start].length-1; // column
 
   while (start<matrix.length && end>=0) 
   {
