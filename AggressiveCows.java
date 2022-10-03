@@ -1,31 +1,13 @@
 import java.util.Arrays;
-import java.util.Scanner;
 
 public class AggressiveCows
 {
 public static void main(String[] args)
 {
-//   Scanner io = new Scanner(System.in);
-//   int t = io.nextInt();
-//   while (t-->0)
-//   {
-//     int arrSize = io.nextInt();
-//     int totalCows = io.nextInt();
-//     int[] stalls = new int[arrSize];
-    
-//     for (int i = 0; i < arrSize; i++) 
-//     {
-//      stalls[i] = io.nextInt();    
-//     }
-//     System.out.println(minimumPosition(stalls, 2));
-System.out.println(minimumPosition(, 0));
+// 
+// System.out.println(minimumPosition(, 0));
 }
-  /*2
-6 4
-0 3 4 7 10 9
-6 3
-0 4 3 7 10 9 */
-}
+
 
 public static int minimumPosition(int[] array, int cow)
 {
